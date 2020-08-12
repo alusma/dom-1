@@ -34,10 +34,11 @@ window.dom = {
     //重载
     if (arguments.length === 3) {
       node.setAttribute(name, value);
-    } else if (arguments === 2) {
+    } else if (arguments.length === 2) {
       return node.getAttribute(name);
     }
   },
+
   text(node, string) {
     //适配
     if (arguments.length === 2) {
